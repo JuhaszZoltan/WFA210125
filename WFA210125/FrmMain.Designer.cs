@@ -33,13 +33,13 @@ namespace WFA210125
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTurazok = new System.Windows.Forms.DataGridView();
-            this.btnRef = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnUj = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRef = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnUj = new System.Windows.Forms.Button();
             this.pbPic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurazok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPic)).BeginInit();
@@ -89,6 +89,31 @@ namespace WFA210125
             this.dgvTurazok.TabIndex = 1;
             this.dgvTurazok.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvTurazok_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 30F;
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Név";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Város";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Telefon";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
             // btnRef
             // 
             this.btnRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -118,31 +143,7 @@ namespace WFA210125
             this.btnUj.TabIndex = 2;
             this.btnUj.Text = "Új személy";
             this.btnUj.UseVisualStyleBackColor = true;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 30F;
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Név";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Város";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Telefon";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
+            this.btnUj.Click += new System.EventHandler(this.BtnUj_Click);
             // 
             // pbPic
             // 
